@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      *,
+      *::after,
+      *::before {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      :root {
+        --imgBorder: #cde4de;
+        --sectionBg: #ddf6f89f;
+        --containerBg: #f9fffb;
+        --bodyBg: #b4cecd;
+      }
+      body,
+      html {
+        height: 100%;
+        width: 100%;
+      }
+      body {
+        background-color: var(--bodyBg);
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+      }
+      h1,
+      h2,
+      h3,
+      h4 {
+        text-transform: uppercase;
+        color: rgb(61, 58, 58);
+      }
+      p {
+        color: rgb(113, 112, 112);
+      }
+      .cv_container {
+        width: 95%;
+        max-width: 800px;
+        height: 100%;
+        margin: 0 auto;
+        background-color: var(--containerBg);
+        overflow: hidden;
+        padding: 15px 40px;
+      }
+      .cv_container .side_one img {
+        width: 150px;
+        height: 155px;
+        border-radius: 50%;
+        border: 6px solid var(--imgBorder);
+      }
+      .cv_container .side_one {
+        width: 30%;
+        height: 100%;
+        float: left;
+        /* background-color: red; */
+      }
+      .cv_container .side_two {
+        float: right;
+        width: 68%;
+        height: 100%;
+        /* background-color: greenyellow; */
+        padding: 15px 25px;
+      }
+      .cv_container .side_one .main-one,
+      .cv_container .side_one .main-two {
+        width: 100%;
+        height: 40%;
+        background-color: var(--sectionBg);
+        padding: 10px 15px;
+        border-radius: 20px;
+        margin-top: 25px;
+      }
+      .cv_container .side_one .main-two {
+        height: 32%;
+      }
+      .cv_container .side_one .main-one section,
+      .cv_container .side_one .main-two section {
+        margin-top: 15px;
+      }
+      .cv_container .side_two .profile {
+        margin: 15px 0;
+      }
+      .cv_container .side_two .profile h2 {
+        margin-bottom: 10px;
+      }
+      .cv_container .side_two .experience {
+        width: 100%;
+        height: 50%;
+        background-color: var(--sectionBg);
+        padding: 15px 10px;
+        border-radius: 20px;
+        overflow: hidden;
+      }
+      .cv_container .side_two .experience .section-one {
+        width: 25%;
+        height: 100%;
+        float: left;
+      }
+      .cv_container .side_two .experience .section-one div {
+        margin-top: 50px;
+      }
+      .cv_container .side_two .experience .section-two div {
+        margin-top: 35px;
+      }
+      .cv_container .side_two .experience .section-two {
+        width: 67%;
+        height: 100%;
+        float: right;
+      }
+      .cv_container .side_two .section-three {
+        background-color: var(--sectionBg);
+        border-radius: 20px;
+        margin-top: 20px;
+        padding: 15px;
+      }
+      .cv_container .side_two .section-three .skill-container {
+        overflow: hidden;
+        margin-top: 5px;
+      }
+      .cv_container .side_two .section-three .skill-container .skill-content {
+        width: 50%;
+        float: left;
+        margin-top: 5px;
+      }
+      .cv_container
+        .side_two
+        .section-three
+        .skill-container
+        .skill-content
+        p:last-child {
+        width: 70%;
+        height: 8px;
+        background-color: rgba(0, 0, 0, 0.462);
+      }
+      .cv_container
+        .side_two
+        .section-three
+        .skill-container
+        .skill-content
+        p:last-child
+        .sp-one {
+        display: block;
+        width: 90%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.719);
+      }
+      .cv_container
+        .side_two
+        .section-three
+        .skill-container
+        .skill-content
+        p:last-child
+        .sp-two {
+        display: block;
+        width: 85%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.719);
+      }
+      .cv_container
+        .side_two
+        .section-three
+        .skill-container
+        .skill-content
+        p:last-child
+        .sp-three {
+        display: block;
+        width: 75%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.719);
+      }
+      .cv_container
+        .side_two
+        .section-three
+        .skill-container
+        .skill-content
+        p:last-child
+        .sp-four {
+        display: block;
+        width: 80%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.719);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="cv_container">
+      <div class="side_one">
+        <img src="cv-profile.png" alt="cvProfile" />
+
+        <!-- education -->
+        <main class="main-one">
+          <h2>education</h2>
+          <section class="section-aside-one">
+            <p>2014-2018</p>
+            <p>Degree Name</p>
+            <p>University name here</p>
+          </section>
+
+          <section class="section-aside-one">
+            <p>2014-2018</p>
+            <p>Degree Name</p>
+            <p>University name here</p>
+          </section>
+
+          <section class="section-aside-one">
+            <p>2014-2018</p>
+            <p>Degree Name</p>
+            <p>University name here</p>
+          </section>
+        </main>
+
+        <!-- contact -->
+        <main class="main-two">
+          <section>
+            <p>Phone</p>
+            <p>+000 325 435</p>
+          </section>
+          <section>
+            <p>Email</p>
+            <p>youngboy@gmail.com</p>
+          </section>
+          <section>
+            <p>Address</p>
+            <p>Your street Address</p>
+            <p>Town/city, zip code</p>
+          </section>
+        </main>
+      </div>
+
+      <!-- side two information-->
+      <div class="side_two">
+        <header>
+          <h1>malkin <br />anderson</h1>
+          <h3>web developer</h3>
+        </header>
+        <div class="profile">
+          <h2>profile</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ad
+            eaque eos deserunt non voluptates facere eligendi.
+          </p>
+        </div>
+
+        <!-- experience -->
+        <main class="experience">
+          <h2>experience</h2>
+          <section class="section-one">
+            <div class="exp-one">
+              <p>2020-Present</p>
+              <p>company name</p>
+            </div>
+            <div class="exp-two">
+              <p>2020-Present</p>
+              <p>company name</p>
+            </div>
+            <div class="exp-three">
+              <p>2020-Present</p>
+              <p>company name</p>
+            </div>
+          </section>
+
+          <section class="section-two">
+            <div class="info-two">
+              <p>senior web developer</p>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+            </div>
+
+            <div class="info-three">
+              <p>senior web developer</p>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+            </div>
+            <div class="info-three">
+              <p>senior web developer</p>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+            </div>
+          </section>
+        </main>
+        <!-- skills -->
+        <section class="section-three">
+          <h2>skills</h2>
+          <div class="skill-container">
+            <div class="skill-content">
+              <p>html</p>
+              <p class="sp1"><span class="sp-one"></span></p>
+            </div>
+
+            <div class="skill-content">
+              <p>css</p>
+              <p class="sp2"><span class="sp-two"></span></p>
+            </div>
+
+            <div class="skill-content">
+              <p>javascript</p>
+              <p class="sp3"><span class="sp-three"></span></p>
+            </div>
+            <div class="skill-content">
+              <p>react js</p>
+              <p class="sp4"><span class="sp-four"></span></p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>
